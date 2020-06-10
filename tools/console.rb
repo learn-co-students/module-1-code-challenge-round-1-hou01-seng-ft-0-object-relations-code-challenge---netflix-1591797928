@@ -10,7 +10,14 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-
+avengers =  Movie.new("Avengers")
+spiderman = Movie.new("Spiderman")
+mark = Viewer.new("Mark")
+manny = Viewer.new("Manny")
+avengers_review_1 = Review.new(mark, avengers, 9)
+avengers_review_2 = Review.new(manny, avengers, 7)
+spiderman = Review.new(manny, spiderman, 7)
+#mark.rate_movie(spiderman, 7)
 
 
 
