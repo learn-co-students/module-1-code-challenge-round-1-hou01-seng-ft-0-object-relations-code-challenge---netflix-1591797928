@@ -12,4 +12,15 @@ class Movie
     @@all
   end
 
+  def reviews 
+    reviews = []
+    Review.all.each do |review|
+      if review.movie == self
+        reviews.push(review)
+      end
+    end
+    reviews
+  end
+
+
 end
